@@ -1,0 +1,28 @@
+.app-download{
+    /* This centers the element horizontally and vertically by applying automatic margins on all sides */
+    margin: auto auto;                    
+    margin-top: 100px;
+    font-size: max(3vw,20px);
+    text-align: center;
+    font-weight: 500;
+}
+.app-download-platforms{
+    /* Creates a flexible box layout, */
+    display: flex;
+    /* igns the child items (platform icons) horizontally in the center of the container. */
+    justify-content: center;
+    /* //Adds space between the child items, with the space being either the maximum of 2% of the viewport height or 10px. */
+    gap: max(2vm,10px);
+    /* Adds a 40px gap between this element and the element above it. */
+    margin-top: 40px;
+}
+.app-download-platforms img{
+    /* Sets the width of the images to the larger of either 30% of the viewport width or 120px. */
+    width: max(30vw,120px);
+    max-width: 180px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.app-download-platforms img:hover{
+   transform: scale(1.05);
+}
